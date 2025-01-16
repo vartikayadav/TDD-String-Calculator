@@ -13,6 +13,13 @@ class StringCalculator {
       .split(delimiter)
       .map((num) => parseInt(num, 10))
       .filter((num) => !isNaN(num))
+
+    const negatives = nums.filter((num) => num < 0)
+    if (negatives.length) {
+      throw new Error(
+        `Negative Numbers are not allowed! : ${negatives.join(', ')}`
+      )
+    }
   }
 }
 
