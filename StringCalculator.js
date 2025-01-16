@@ -25,5 +25,4 @@ class StringCalculator {
   }
 }
 
-// Exporting the class for unit testing
 module.exports = StringCalculator
