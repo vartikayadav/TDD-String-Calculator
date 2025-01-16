@@ -20,6 +20,8 @@ class StringCalculator {
         `Negative Numbers are not allowed! : ${negatives.join(', ')}`
       )
     }
+
+    return nums.reduce((sum, num) => sum + num, 0)
   }
 }
 
